@@ -26,7 +26,7 @@ version = "1.0"
 // In this section you declare where to find the dependencies of your project
 
 import org.ajoberstar.grgit.*
-def repo = Grgit.open('.')
+def repo = Grgit.open(System.getProperty("user.dir"))
 jar {
 	manifest {
         attributes("Built-By": System.getProperty("user.name"))
